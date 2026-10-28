@@ -31,6 +31,7 @@ nnoremap <S-i> :LspDefinition<cr> " Shift-i para ir para a implentação
 nnoremap <Tab> :bn<cr> " Mapeia Tab para mudar de buffer
 nnoremap <C-@> :LspHover<cr> " Mapeia C-Space para ter acesso a documentação de um método ou função 
 nnoremap <C-p> :MarkdownPreview<cr>
+nnoremap <C-t> :term<cr>
 
 call plug#begin()
 
@@ -42,18 +43,15 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim',
 Plug 'vim-airline/vim-airline',
 Plug 'vim-airline/vim-airline-themes',
 Plug 'ryanoasis/vim-devicons',
-Plug 'sainnhe/sonokai',
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install' }
 
 call plug#end()
 
-let g:sonokai_style = 'shusia'
-let g:sonokai_better_performance = 1
-colorscheme sonokai
+colorscheme habamax 
 
 " let g:lsp_diagnostics_enabled = 0 " Desabilitar mensagens de erro
 
-let g:airline_theme='tomorrow'
+let g:airline_theme='minimalist'
 
 let g:airline_section_b = '%f'
 let g:airline_section_c = ''
