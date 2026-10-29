@@ -1,1 +1,1 @@
-set guifont=GoogleSansCode\ Nerd\ Font\ Mono\ Regular\ 14
+set guifont=Maple\ Mono\ NF\ CN\ 14

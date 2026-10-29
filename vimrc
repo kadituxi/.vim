@@ -16,7 +16,7 @@ set autoread
 set clipboard=unnamedplus
 set encoding=UTF-8
 set noswapfile
-" set cursorline
+set cursorline
 set termguicolors
 set background=dark
 set confirm
@@ -25,7 +25,7 @@ syntax on
 
 nnoremap <C-s> :w<cr>
 noremap <C-q> :q<cr>
-nnoremap <C-b> :Exp<cr>
+nnoremap <C-e> :Exp<cr>
 nnoremap <C-y> :%y+<cr>
 nnoremap <S-i> :LspDefinition<cr> " Shift-i para ir para a implentação
 nnoremap <Tab> :bn<cr> " Mapeia Tab para mudar de buffer
@@ -35,7 +35,6 @@ nnoremap <C-t> :term<cr>
 
 call plug#begin()
 
-Plug 'jiangmiao/auto-pairs',
 Plug 'prabirshrestha/vim-lsp',
 Plug 'mattn/vim-lsp-settings',
 Plug 'prabirshrestha/asyncomplete.vim',
