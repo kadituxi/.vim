@@ -35,6 +35,7 @@ nnoremap <C-t> :term<cr>
 
 call plug#begin()
 
+Plug 'jiangmiao/auto-pairs',
 Plug 'prabirshrestha/vim-lsp',
 Plug 'mattn/vim-lsp-settings',
 Plug 'prabirshrestha/asyncomplete.vim',
